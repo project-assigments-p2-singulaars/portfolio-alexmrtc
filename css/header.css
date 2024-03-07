@@ -4,7 +4,23 @@ html {
 
 body {
 	height: calc(100% - 8px * 2);
-	background: linear-gradient(135deg, #ABAC79,  #2518C0 30%, #261C8E 80%) no-repeat fixed;
+	/* background: linear-gradient(135deg, #ABAC79,  #2518C0 25%, #261C8E 50%, #2518C0 75%, #ABAC79); */
+	background: linear-gradient(225deg, #CACC80,  #3F3B62 15%, #0C0463 50%, #3F3B62 85%, #CACC80);
+	background-size: 400% 400%;
+	width: 100%;
+	animation: animate 15s ease infinite;
+}
+
+@keyframes animate {
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
 }
 
 /*#region Header*/
@@ -50,6 +66,12 @@ li a {
 	justify-content: space-evenly;
 }
 
+#headerTheme {
+	justify-content: flex-end;
+    gap: 10px;
+    margin-right: 5%;
+}
+
 
 #sun {
 	background: url("../sun.svg") no-repeat center;
@@ -80,14 +102,14 @@ li a {
 }
 
 .theme-switch__label {
-	padding: 20px;
-	margin: 60px;
+	padding: 10px;
+	/* margin: 60px; */
 	transition: background-color 200ms ease-in-out;
 	width: 120px;
 	height: 50px;
 	border-radius: 50px;
 	text-align: center;
-	background-color: slateGray;
+	/* background-color: slateGray; */
 	box-shadow: -4px 4px 15px inset rgba(0, 0, 0, 0.4);
 }
 
