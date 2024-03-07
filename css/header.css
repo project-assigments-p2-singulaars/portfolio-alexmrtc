@@ -1,3 +1,14 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: calc(100% - 8px * 2);
+	background: linear-gradient(135deg, #ABAC79,  #2518C0 30%, #261C8E 80%) no-repeat fixed;
+}
+
+/*#region Header*/
+
 #headerContainer {
 	height: 100%;
 }
@@ -34,26 +45,18 @@
     border-radius: 50%;
 }
 
-header {
-	height: 115px;
-	background-color: rgba(255, 255, 255, 0.3);
-}
 
-body {
-	min-height: calc(100% - 8px * 2);
-	background: linear-gradient(135deg, #ABAC79,  #2518C0 30%, #261C8E 80%) no-repeat fixed;
-}
 
-.navLinks {
-    display: flex;
+.textFlex {
+	display: flex;
 }
 
 #profileName, #profilePhotoContainer {
-    width: 45%;
+	width: 45%;
 }
 
 #theme-switch__input{
-    height: 0%;
+	height: 0%;
     width: 0%;
 }
 
@@ -68,3 +71,39 @@ body {
 	background-color: slateGray;
 	box-shadow: -4px 4px 15px inset rgba(0, 0, 0, 0.4);
 }
+
+header, footer {
+	height: 10%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+/*#endregion*/
+
+/*#region Footer*/
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+#footerContainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.footerDivElements{
+	display: flex;
+	width: 30%
+}
+
+#footerTermsPrivacy {
+	width: 40%;
+	justify-content: center;
+}
+
+#footerSocials, #footerTermsPrivacy {
+	justify-content: space-evenly;
+}
+
+/*#endregion*/
