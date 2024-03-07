@@ -1,0 +1,70 @@
+#headerContainer {
+	height: 100%;
+}
+
+#headerProfile, #headerContainer, #headerLinks, #headerTheme {
+	align-items: center;
+    display: flex;
+    color: black;
+    font-style: oblique;
+    font-size: 24px;
+}
+
+#headerProfile, #headerTheme {
+	width: 30%;
+	justify-content: space-evenly;
+}
+
+#headerLinks{
+	width: 40%;
+	justify-content: space-evenly;
+}
+
+
+#sun {
+	background: url("../sun.svg") no-repeat center;
+    background: 100%;
+}
+
+
+#profilePhoto {
+	display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+header {
+	height: 115px;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+body {
+	min-height: calc(100% - 8px * 2);
+	background: linear-gradient(135deg, #ABAC79,  #2518C0 30%, #261C8E 80%) no-repeat fixed;
+}
+
+.navLinks {
+    display: flex;
+}
+
+#profileName, #profilePhotoContainer {
+    width: 45%;
+}
+
+#theme-switch__input{
+    height: 0%;
+    width: 0%;
+}
+
+.theme-switch__label {
+	padding: 20px;
+	margin: 60px;
+	transition: background-color 200ms ease-in-out;
+	width: 120px;
+	height: 50px;
+	border-radius: 50px;
+	text-align: center;
+	background-color: slateGray;
+	box-shadow: -4px 4px 15px inset rgba(0, 0, 0, 0.4);
+}
