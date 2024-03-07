@@ -4,8 +4,8 @@ html {
 
 body {
 	height: calc(100% - 8px * 2);
-	/* background: linear-gradient(135deg, #ABAC79,  #2518C0 25%, #261C8E 50%, #2518C0 75%, #ABAC79); */
-	background: linear-gradient(225deg, #CACC80,  #3F3B62 15%, #0C0463 50%, #3F3B62 85%, #CACC80);
+	background: linear-gradient(135deg, #ABAC79,  #2518C0 25%, #261C8E 50%, #2518C0 75%, #ABAC79);
+	/* background: linear-gradient(225deg, #CACC80,  #3F3B62 15%, #0C0463 50%, #3F3B62 85%, #CACC80); */
 	background-size: 400% 400%;
 	width: 100%;
 	animation: animate 15s ease infinite;
@@ -56,9 +56,14 @@ li a {
     font-size: 24px;
 }
 
+#headerProfile {
+	justify-content: flex-start;
+    margin-left: 5%;
+    gap: 1rem;
+}
+
 #headerProfile, #headerTheme {
 	width: 30%;
-	justify-content: space-evenly;
 }
 
 #headerLinks{
@@ -143,8 +148,19 @@ footer {
 	justify-content: center;
 }
 
+#footerCopyright {
+	justify-content: flex-end;
+    margin-right: 5%;
+}
+
 #footerSocials, #footerTermsPrivacy {
-	justify-content: space-evenly;
+	/* justify-content: space-evenly; */
+}
+
+#footerSocials {
+	justify-content: flex-start;
+    margin-left: 5%;
+    gap: 1rem;
 }
 
 /*#endregion*/
