@@ -2,23 +2,30 @@ html {
 	height: 100%;
 }
 
+section {
+	display: flex;
+	height: calc(80% - 8px * 2);
+}
+
 body {
 	height: calc(100% - 8px * 2);
-	background: linear-gradient(135deg, #ABAC79,  #2518C0 25%, #261C8E 50%, #2518C0 75%, #ABAC79);
-	/* background: linear-gradient(225deg, #CACC80,  #3F3B62 15%, #0C0463 50%, #3F3B62 85%, #CACC80); */
+	background: linear-gradient(135deg, #b2ffff, #b2ffff 25%, #3abeff 50%, #3c59ff 75%, #3c59ff);
+	/* background: linear-gradient(225deg, #5a5a97,  #313163 25%, #0f0f41 50%, #0f0f41 75%, #010015); */
 	background-size: 400% 400%;
 	width: 100%;
 	animation: animate 15s ease infinite;
 }
 
 @keyframes animate {
-	0%{
+	0% {
 		background-position: 0% 50%;
 	}
-	50%{
+
+	50% {
 		background-position: 100% 50%;
 	}
-	100%{
+
+	100% {
 		background-position: 0% 50%;
 	}
 }
@@ -28,6 +35,7 @@ body {
 ul {
 	display: flex;
 }
+
 li {
 	display: inline;
 }
@@ -38,72 +46,73 @@ li a {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-  }
-  
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
+	border-radius: 25%;
+}
+
+/* Change the link color on hover */
+li a:hover {
 	background-color: rgba(255, 255, 255, 0.3);
-  }
+}
+
+.headerContent {
+	align-items: center;
+	display: flex;
+	color: black;
+	font-style: oblique;
+	font-size: 24px;
+}
+
 #headerContainer {
 	height: 100%;
 }
 
-#headerProfile, #headerContainer, #headerLinks, #headerTheme {
-	align-items: center;
-    display: flex;
-    color: black;
-    font-style: oblique;
-    font-size: 24px;
-}
 
 #headerProfile {
 	justify-content: flex-start;
-    margin-left: 5%;
-    gap: 1rem;
+	margin-left: 5%;
+	gap: 1rem;
 }
 
-#headerProfile, #headerTheme {
+#headerProfile,
+#headerTheme {
 	width: 30%;
 }
 
-#headerLinks{
+#headerLinks {
 	width: 40%;
 	justify-content: space-evenly;
 }
 
 #headerTheme {
 	justify-content: flex-end;
-    gap: 10px;
-    margin-right: 5%;
+	gap: 10px;
+	margin-right: 5%;
 }
-
 
 #sun {
 	background: url("../sun.svg") no-repeat center;
-    background: 100%;
+	background: 100%;
 }
-
 
 #profilePhoto {
 	display: flex;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
 }
-
-
 
 .textFlex {
 	display: flex;
 }
 
-#profileName, #profilePhotoContainer {
+#profileName,
+#profilePhotoContainer {
 	width: 45%;
 }
 
-#theme-switch__input{
+#theme-switch__input {
 	height: 0%;
-    width: 0%;
+	width: 0%;
 }
 
 .theme-switch__label {
@@ -118,11 +127,13 @@ li a {
 	box-shadow: -4px 4px 15px inset rgba(0, 0, 0, 0.4);
 }
 
-header, footer {
+header,
+footer {
 	height: 10%;
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.3);
 }
+
 /*#endregion*/
 
 /*#region Footer*/
@@ -131,14 +142,14 @@ footer {
 	justify-content: center;
 }
 
-#footerContainer{
+#footerContainer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 }
 
-.footerDivElements{
+.footerDivElements {
 	display: flex;
 	width: 30%
 }
@@ -150,27 +161,29 @@ footer {
 
 #footerCopyright {
 	justify-content: flex-end;
-    margin-right: 5%;
+	margin-right: 5%;
 }
 
-#footerSocials, #footerTermsPrivacy {
+#footerSocials,
+#footerTermsPrivacy {
 	/* justify-content: space-evenly; */
 }
 
 #footerSocials {
 	justify-content: flex-start;
-    margin-left: 5%;
-    gap: 1rem;
+	margin-left: 5%;
+	gap: 1rem;
 }
 
 /*#endregion*/
 
-/*#region Menu*/
+/*#region Landing page*/
+
 #menu {
 	height: 80%;
 }
 
-.menu h2{
+.menu h2 {
 	text-align: center;
 	color: black;
 	font-size: 60px;
@@ -179,15 +192,58 @@ footer {
 
 #menuContainer {
 	display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
 }
 
-.menu P{
+.menu P {
 	text-align: center;
 	font-size: 28px;
 	width: 35%;
 }
+
+/*#endregion*/
+
+/*#region Projects page*/
+#projectsContainer{
+	width: 80%;
+	height: 80%;
+	display: flex;	
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.projectRow {
+	display: flex;
+	height: 45%;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: auto;
+}
+
+.project {
+	display: flex;
+	flex-direction: row;
+	background-color: red;
+	width: 30%;
+	height: 65%;
+	justify-content: center;
+}
+
+#projectMoira{
+	background-image: url("../moira.png");
+	background-size: 100% 100%;
+	/* object-fit: cover; */
+}
+
+#moira {
+	object-fit: contain;
+}
+
 /*#endregion*/
