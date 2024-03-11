@@ -168,10 +168,10 @@ footer {
 	margin-right: 5%;
 }
 
-#footerSocials,
+/* #footerSocials,
 #footerTermsPrivacy {
-	/* justify-content: space-evenly; */
-}
+	justify-content: space-evenly;
+} */
 
 #footerSocials {
 	justify-content: flex-start;
@@ -232,6 +232,7 @@ footer {
 }
 
 .project {
+	background-size: 100% 100%;
 	display: flex;
 	flex-direction: row;
 	background-color: red;
@@ -247,7 +248,26 @@ footer {
 
 #projectMoira{
 	background-image: url("../moira.png");
-	background-size: 100% 100%;
+}
+
+#projectBlastPast{
+	background-image: url("../Menu.PNG");
+}
+
+#projectProceduralCity{
+	background-image: url("../City.PNG");
+}
+
+#projectPokeApi{
+	background-image: url("../PokeAngular.png");
+}
+
+#projectShipQuik{
+	background-image: url("../ShipQuik.png");
+}
+
+#projectConway{
+	background-image: url("../Conway.png");
 }
 
 #moira {
