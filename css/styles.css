@@ -49,6 +49,10 @@ li a {
 	border-radius: 25%;
 }
 
+h2 a {
+	text-decoration: none;
+}
+
 /* Change the link color on hover */
 li a:hover {
 	background-color: rgba(255, 255, 255, 0.3);
@@ -236,10 +240,14 @@ footer {
 	justify-content: center;
 }
 
+.project:hover{
+	width: 35%;
+	height: 70%;
+}
+
 #projectMoira{
 	background-image: url("../moira.png");
 	background-size: 100% 100%;
-	/* object-fit: cover; */
 }
 
 #moira {
