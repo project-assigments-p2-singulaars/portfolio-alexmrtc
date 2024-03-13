@@ -103,8 +103,8 @@ li a:hover {
 
 .profilePhoto {
 	display: flex;
-	height: 50px;
-	width: 50px;
+	height: 4rem;
+	width: 4rem;
 	border-radius: 50%;
 }
 
@@ -126,8 +126,8 @@ li a:hover {
 	padding: 10px;
 	/* margin: 60px; */
 	transition: background-color 200ms ease-in-out;
-	width: 120px;
-	height: 50px;
+	width: 7.5rem;
+	height: 4rem;
 	border-radius: 50px;
 	text-align: center;
 	/* background-color: slateGray; */
@@ -209,6 +209,25 @@ footer {
 	text-align: center;
 	font-size: 28px;
 	width: 35%;
+}
+#pillsContainer {
+	display: flex;
+	justify-content: center;
+	gap: 5%;
+}
+
+.matrixPills {
+	display: flex;
+	width: 200px;
+	height: 100px;
+}
+
+#redPill {
+	background-color: red;
+}
+
+#bluePill{
+	background-color: blue;
 }
 
 /*#endregion*/
