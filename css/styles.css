@@ -12,7 +12,7 @@ body {
 	background: linear-gradient(135deg, #b2ffff, #b2ffff 25%, #3abeff 50%, #3c59ff 75%, #3c59ff);
 	/* background: linear-gradient(225deg, #5a5a97,  #313163 25%, #0f0f41 50%, #0f0f41 75%, #010015); */
 	background-size: 400% 400%;
-	width: 100%;
+	/* width: 100%; */
 	animation: animate 15s ease infinite;
 }
 
@@ -31,6 +31,11 @@ p {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+@keyframes typing {
+	from { width: 0;}
+	to { width: 100%;}
 }
 
 /*#region Header*/
@@ -89,6 +94,12 @@ li a:hover {
 	width: 40%;
 	justify-content: space-evenly;
 }
+/* 
+#headerLinksResponsive {
+	display: none;
+	width: 40%;
+	justify-content: space-evenly;
+} */
 
 #headerTheme {
 	justify-content: flex-end;
@@ -188,6 +199,7 @@ footer {
 
 #menu {
 	height: 80%;
+	justify-content: center;
 }
 
 .menu h2 {
@@ -205,10 +217,21 @@ footer {
 	height: 100%;
 }
 
+#menuContainer h2 {
+	overflow: hidden;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	animation: typing 1s steps(40, end);
+}
+
 .menu P {
+	overflow: hidden;
+	white-space: nowrap;
 	text-align: center;
-	font-size: 28px;
-	width: 35%;
+	font-size: 1.5rem;
+	width: 40%;
+	animation: typing 4.5s steps(40, end);
 }
 #pillsContainer {
 	display: flex;
@@ -330,7 +353,7 @@ footer {
 
 #introductionAboutMe{
 	overflow: hidden;
-	white-space: nowrap;
+	/* white-space: nowrap; */
 	text-overflow: ellipsis;
 }
 
@@ -349,5 +372,16 @@ footer {
 #aboutMeProfile {
 	height: 100px;
 	width: 100px;
+}
+/*#endregion*/
+
+/*#region Media Queries*/
+@media (max-width: 1024px) {
+	#headerLinksResponsive {
+		display: block;
+	}
+	#headerLinks {
+		display: none;
+	}
 }
 /*#endregion*/
