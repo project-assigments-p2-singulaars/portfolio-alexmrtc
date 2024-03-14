@@ -1,59 +1,28 @@
 # Web Porfolio
 
 ## Descripción
-Crearemos nuestro portafolio online haciendo uso de HTML y CSS. Este proyecto se irá actualizando a medida que vayamos aprendiendo nuevas tecnologías.
+El Portfolio consta de varias views: 
 
-## Contexto del proyecto
-### ¿Qué es un portfolio online?
-Un portfolio online es la mejor manera de mostrar tu trabajo y permite que otras personas sepan más de ti. Además de esto, es una de las mejores formas para expresar tu personalidad, experiencia y capacidades.
+- Landing Page: En esta view se muestra un texto de presentación con el nombre y rol. En un futuro se añadirán 2 botones simulando las manos y pastillas de Matrix para dirigir al cliente a la Projects Section y About Me Section.
 
-### ¿Por qué es importante tener un portfolio online?
-Sólo toma unos segundos el perder la atención de un visitante, así que asegúrate de utilizar estos segundos sabiamente. Tus clientes potenciales y/o la empresa que está buscando contratarte verán primero el diseño y si les gusta lo que ven, ellos seguirán buscando para encontrar más detalles. En otras palabras, necesitas una sorprendente y atractiva presentación de tus trabajos.
+- Projects Section: En esta view se muestra un contenedor centrado que contiene un título y 2 filas con algunos de los proyectos que he desarrollado por ahora. Dichos proyectos actualmente tienen un hover, pero cuando utilicemos Angular o React quiero hacer que al clicar se expanda ocupando el contenedor y mostrando la información del proyecto (nombre, año, rol en el proyecto, etc...).  
 
-Esto se puede hacer de muchas maneras – diapositivas, presentaciones en video, galerías con vistas previas, etc-. Por ejemplo, si eres un programador puedes crear tu sitio web mostrando los proyectos que desarrollaste asegurandote que el usuario visualmente quiera entrar y ver lo creado, para lo cual puedes usar imagenes claras, tecnologías usadas y links de las soluciones (si aplica). Adicional, será importante contar un poco de ti y de la experiencia que tienes como desarrollador,de manera transversal tus canales de contacto, puede ser un formulario, botones de mensajería instantanea, tus perfiles profesionales como linkedIn, github y correos profesionales.
+- About Me: En esta view se muestra un apartado con una foto de perfil, nombre, pequeña descripción y unos iconos. Estos iconos al hacer click abren una nueva ventana a Linkedin y Github (dependiendo del icono). El icono de documento en un futuro abrira un Pop-Up o alerta y si el cliente le da a aceptar descarga mi CV.
 
-### Requerimientos técnicos
-1. El proyecto DEBE utilizar el panel de señalización Kanban.
-2. La página web DEBE ser responsive.
-3. El proyecto DEBE ser lo más escalable posible. Ya que se irá actualizando a medida que vayamos aprendiendo nuevas tecnologías.
-4. El proyecto DEBE ser desarrollado con HTML y CSS. 
-5. Utilizar Gitflow para el desarrollo del código.
-6. Se DEBE hacer un diseño en Figma para cada módulo de la web.
-7. Se hace primero el diseño en figma y después la maquetación en HTML/CSS
-8. Se debe desplegar el proyecto.
+Todas estas views disponen de un Header y Footer:
 
-### Bonus Track
-- Aplicar criterios de accesibilidad.
+- Header: A la izquierda se encuentra una foto y mi nombre. En el centro encontramos una navbar que dirige a las diferentes views del portfolio. A la derecha encontramos unos iconos e input radio button para en un futuro implementar el cambio de temas (Light/Dark).
 
-## Modalidades Pedagógicas
-- El proyecto será individual (se puede pedir ayuda a los compañeros).
-- Se realizará en dos Sprints:
-- Sprint I, entrega viernes 08/04:
-- Módulos: Menu, Header, Footer
-- Sprint II, entrega viernes 15/04:
-- Módulos: Sección About Me, Sección Proyectos
+- Footer: A la izquierda encontramos los iconos de Linkedin y Github que al hacer click también abren una nueva ventana para mostrar los enlaces. En el centro encontraremos los links para Terms and Conditions. A la derecha simplemente hay un texto con el Copyright.
 
-## Modalidades de Evaluación
-- La evaluación se realizará mediante comentarios orales el día de la presentación.
-- Se hará también una dinámica de autoevaluación.
+## Demo (Figma)
+https://www.figma.com/file/ZH4Re764id7ASOg6XSRQPZ/Portfolio?type=design&node-id=0%3A1&mode=design&t=YAzZK8paBhL4n3l0-1
 
-### Entregables
-- Repositorio con el fichero README.md explicando:
-  - Descripción del proyecto
-  - Link del despliegue
-  - Demo (Figma)
-  - Herramientas utilizadas
-  - Cómo instalar el proyecto en el ordenador (local)
-- Link del deploy del porfolio
+## Herramientas utilizadas
 
-### ¿Qué competencias se evalúan?
-- Maquetar una web nivel 3
-- Crear una interfaz de usuario web estática y adaptable nivel 3
-
-## Recursos
-- [Link inspiración 1](https://bedecked-temple-4d4.notion.site/Links-de-Inspiraci-n-aef59e8285c24c4eba171b2290b74e58)
-- [Link inspiración 2](https://dribbble.com/tags/react_portfolio)
-- [Link inspiración 3](https://dribbble.com/tags/portfolio)
-- [Porfolio guillem](https://www.guillemmartinez.com)
-- [Porfolio Alejandra](https://alemcuitino.vercel.app)
-- [Porfolio Carla](https://porfolio-carladev.vercel.app)
+- HTML
+- CSS
+- JavaScript
+- Figma
+- Trello
+- Github

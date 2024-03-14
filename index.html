@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div id="headerContainer" class="headerContent">
+            <div id="headerProfile" class="headerContent">
+                <div>
+                    <img class="profilePhoto" src="img_avatar.png" alt="profilePhoto" height="50px" width="50px">
+                </div>
+                <p id="profileName" class="textFlex">Alex Morell</p>
+            </div>
+            <nav id="headerLinks" class="headerContent">
+                <ul>
+                    <li><a href="./index.html" class="textFlex">Home</a></li>
+                    <li><a href="./src/aboutMe.html" class="textFlex">About</a></li>
+                    <li><a href="./src/projects.html" class="textFlex">Projects</a></li>
+                    <li><a href="#" class="textFlex">Contact</a></li>
+                </ul>
+            </nav>
+            <nav id="headerLinksResponsive" class="headerContent">
+                <img src="./burger-menu.svg" alt="burger-menu" id="burguerMenuIcon">
+            </nav>
+            <div id="headerTheme" class="headerContent">
+                <img src="sun.svg" class="themeIcon" alt="sun" height="50px" width="50px">
+                <div>
+                    <input id="theme-switch__input" type="checkbox">
+                    <label for="theme-switch__input" class="theme-switch__label"></label>
+                </div>
+                <img src="moon.svg" class="themeIcon" alt="moon" height="50px" width="50px">
+            </div>
+            <div id="headerThemeResponsive" class="headerContent">
+                <img id="responsiveIcon" src="sun.svg" class="themeIcon" alt="sun" height="50px" width="50px">
+            </div>
+        </div>
+    </header>
+    <section id="menu">
+        <div class="menu" id="menuContainer">
+            <h2>Hi, I'm Alex</h2>
+            <p>Fullstack<br> and <br>Game Developer
+            </p>
+            <!-- <div id="pillsContainer">
+                <div id="redPill" class="matrixPills"></div>
+                <div id="bluePill" class="matrixPills"></div>
+            </div> -->
+            
+        </div>
+    </section>
+    <footer>
+        <div id="footerContainer">
+            <div id="footerSocials" class="footerDivElements">
+                <a target="_blank" href="https://www.linkedin.com/in/%C3%A0lex-morell-ram%C3%ADrez-8a45bb177/?originalSubdomain=es">
+                    <img src="linkedin.svg" alt="linkedinIcon" height="50px" width="50px">
+                </a>
+                <a target="_blank" href="https://github.com/alexmrtc">
+                    <img src="githubIcon.svg" alt="githubIcon" height="50px" width="50px">
+                </a>
+            </div>
+            <div id="footerTermsPrivacy" class="footerDivElements">
+                <ul>
+                    <li><a href="#" class="textFlex">Terms</a></li>
+                    <li><a href="#" class="textFlex">Privacy</a></li>
+                </ul>
+            </div>
+            <div id="footerCopyright" class="footerDivElements">
+                <p class="textFlex">@Alex Morell 2024.All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script src="./js/themeSwitch.js"></script>
