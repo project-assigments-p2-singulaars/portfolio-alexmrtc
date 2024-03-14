@@ -7,8 +7,19 @@ section {
 	height: calc(80% - 8px * 2);
 }
 
+.theme-dark {
+	--background-color: black;
+	--background: linear-gradient(225deg, #5a5a97,  #313163 25%, #0f0f41 50%, #0f0f41 75%, #010015);
+}
+.theme-light {
+	--background-color: red;
+	--background: linear-gradient(135deg, #b2ffff, #b2ffff 25%, #3abeff 50%, #3c59ff 75%, #3c59ff);
+}
+
 body {
 	height: calc(100% - 8px * 2);
+	/* background-color: var(--background-color); */
+	/* background-color: red; */
 	background: linear-gradient(135deg, #b2ffff, #b2ffff 25%, #3abeff 50%, #3c59ff 75%, #3c59ff);
 	/* background: linear-gradient(225deg, #5a5a97,  #313163 25%, #0f0f41 50%, #0f0f41 75%, #010015); */
 	background-size: 400% 400%;
@@ -16,7 +27,9 @@ body {
 	animation: animate 15s ease infinite;
 }
 
-p {
+:root {
+	--backgroundLight: linear-gradient(135deg, #b2ffff, #b2ffff 25%, #3abeff 50%, #3c59ff 75%, #3c59ff);
+	--backgroundDark: linear-gradient(225deg, #5a5a97,  #313163 25%, #0f0f41 50%, #0f0f41 75%, #010015);
 }
 
 @keyframes animate {
@@ -76,6 +89,7 @@ li a:hover {
 
 #headerContainer {
 	height: 100%;
+	background-color: var(--background-color);
 }
 
 
