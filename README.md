@@ -26,3 +26,16 @@ https://www.figma.com/file/ZH4Re764id7ASOg6XSRQPZ/Portfolio?type=design&node-id=
 - Figma
 - Trello
 - Github
+
+## Como instalar el proyecto en local 
+
+- Accedemos al repositorio del proyecto : https://github.com/project-assigments-p2-singulaars/portfolio-alexmrtc
+
+- Copiamos el enlace que encontramos en el botón de Code: https://github.com/project-assigments-p2-singulaars/portfolio-alexmrtc.git
+
+- Iniciamos Visual Studio Code y abrimos una terminal.
+
+- Utilizamos el commando git clone (enlace del repositorio): 
+git clone https://github.com/project-assigments-p2-singulaars/portfolio-alexmrtc.git
+
+- Ya disponemos del repositorio en local!
