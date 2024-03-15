@@ -15,6 +15,5 @@ function setTheme(icon, theme){
 let themeIconResponsive = document.getElementById("responsiveIcon");
 
 themeIconResponsive.addEventListener("click", () => {
-    console.log(localStorage.getItem("theme") === lightText)
     localStorage.getItem("theme") === lightText ? setTheme(moonIcon, darkText) : setTheme(sunIcon, lightText)
 } )
